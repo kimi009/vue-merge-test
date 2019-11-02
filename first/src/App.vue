@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo"
-         src="./assets/logo.png" />
+    <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="first vue   docker部署测试" />
     <h1>测试vue提交后触发jenkins自动部署</h1>
   </div>
@@ -9,7 +8,7 @@
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-import axios from 'axios'
+import axios from "axios";
 export default {
   name: "app",
   components: {
@@ -21,9 +20,10 @@ export default {
   methods: {
     async getData() {
       let res = await axios({
-        method: 'get',
-        url: 'http://dev.ksc009.cn:3009/api/users'
-      })
+        method: "get",
+        url: "http://dev.ksc009.cn:3009/api/users"
+      });
+      // eslint-disable-next-line
       console.log(res)
     }
   }
