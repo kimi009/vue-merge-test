@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="first vue   docker部署测试" />
-    <h1>测试vue提交后触发jenkins自动部署</h1>
+    <h1>first 测试vue提交后触发jenkins自动部署</h1>
   </div>
 </template>
 
